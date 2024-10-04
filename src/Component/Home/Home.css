@@ -1,0 +1,33 @@
+.mychatsection{
+    padding: 20px;
+}
+
+.mychatsection .chatinput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mychatsection .chatinput button{
+    position: absolute;
+    right: 26%;
+    backdrop-filter: blur;
+}
+
+.mychatsection .chatinput input{
+    width: 50%;
+}
+
+.mychatsection .chatinput input::placeholder{
+    padding-left: 25px;
+}
+
+.mychatsection .chatinput .attach{
+    position: absolute;
+    left: 25.5%;
+}
+
+svg{
+    background: none;
+}
