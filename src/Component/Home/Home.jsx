@@ -18,6 +18,7 @@ function Home() {
     const [count, setCount] = useState("");
     const [message,setmessage]=useState([{ role: "system", content: "Hi there! Ready to explore?" }]);
     const [user, setUser] = useState(null);
+    
     const [loading,setLoading] = useState(false);
     const navigate = useNavigate();
     const auth = getAuth();
