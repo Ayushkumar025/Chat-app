@@ -60,6 +60,10 @@ function Login() {
                     <div className='bg-white'><img src='./images/git.png' className='object-fit:contain w-[20px] h-[20px]'></img></div>
                     <div className='bg-white'><p onClick={signInWithGithub}>Continue with Github</p></div>
                 </div>
+                <div className='bg-white flex pl-[10px] pt-[12px] mt-[25px] border-2 border-custom-green w-[330px] ml-[520px] h-[50px] cursor-pointer'>
+                    <div className='bg-white'><img src='./images/apple.svg' className='object-fit:contain w-[20px] h-[20px]'></img></div>
+                    <div className='bg-white'><p onClick={signInWithGoogle}>Continue with Apple</p></div>
+                </div>
                 <div className='bg-white text-center justify-center pt-[25px]'>
                     <p className='text-[#10A37F]'>Terms of Use | Privacy Policy</p>
                 </div>
