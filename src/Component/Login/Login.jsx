@@ -12,7 +12,7 @@ function Login() {
         try {   
             const result = await signInWithPopup(auth, provider);
             setUser(result.user);
-            window.location.assign("/Home")
+            window.location.assign("/home")
         } catch (error) {
             console.error("Error signing in with Google", error);
         }
@@ -26,7 +26,7 @@ function Login() {
             const user = result.user;
             console.log("GitHub sign-in successful:", user);
             setUser(user);
-            window.location.assign("/Home");
+            window.location.assign("/home");
         } catch (error) {
             console.error("Error signing in with GitHub", error);
         }
@@ -60,7 +60,6 @@ function Login() {
                     <div className='bg-white'><img src='./images/git.png' className='object-fit:contain w-[20px] h-[20px]'></img></div>
                     <div className='bg-white'><p onClick={signInWithGithub}>Continue with Github</p></div>
                 </div>
-              
                 <div className='bg-white text-center justify-center pt-[25px]'>
                     <p className='text-[#10A37F]'>Terms of Use | Privacy Policy</p>
                 </div>
