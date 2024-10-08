@@ -12,7 +12,7 @@ function Login() {
         try {   
             const result = await signInWithPopup(auth, provider);
             setUser(result.user);
-            window.location.assign("/home")
+            window.location.assign("/chat")
         } catch (error) {
             console.error("Error signing in with Google", error);
         }
@@ -26,7 +26,7 @@ function Login() {
             const user = result.user;
             console.log("GitHub sign-in successful:", user);
             setUser(user);
-            window.location.assign("/home");
+            window.location.assign("/chat");
         } catch (error) {
             console.error("Error signing in with GitHub", error);
         }
